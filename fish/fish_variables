@@ -1,0 +1,11 @@
+# This file contains fish universal variable definitions.
+# VERSION: 3.0
+SETUVAR __fish_initialized:3400
+SETUVAR _fisher_joseluisq_2F_gitnow_40_32_2E_31_30_2E_30__files:\x7e/\x2econfig/fish/functions/__gitnow_config_file\x2efish\x1e\x7e/\x2econfig/fish/functions/__gitnow_functions\x2efish\x1e\x7e/\x2econfig/fish/functions/__gitnow_manual\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/gitnow\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/gitnow_config\x2efish\x1e\x7e/\x2econfig/fish/completions/__gitnow_completions\x2efish
+SETUVAR _fisher_plugins:joseluisq/gitnow\x402\x2e10\x2e0
+SETUVAR _fisher_upgraded_to_4_4:\x1d
+SETUVAR fish_color_cwd_root:red
+SETUVAR fish_color_history_current:\x2d\x2dbold
+SETUVAR fish_color_status:red
+SETUVAR fish_color_valid_path:\x2d\x2dunderline
+SETUVAR fish_key_bindings:fish_default_key_bindings

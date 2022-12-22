@@ -1,0 +1,6 @@
+# ignore all directories with the name test
+test/
+AWSVPNClient/
+linearmouse/
+configstore/
+fontforge/
