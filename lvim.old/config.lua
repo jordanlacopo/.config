@@ -10,21 +10,15 @@ an executable
 
 -- general
 lvim.log.level = "warn"
-lvim.format_on_save.enabled = false
-lvim.colorscheme = "catppuccin"
+lvim.format_on_save = true
+lvim.colorscheme = "onedarker"
 -- to disable icons and use a minimalist setup, uncomment the following
-lvim.builtin.lualine.options.theme = "catppuccin"
-lvim.builtin.lualine.style = "lvim"
-
-
 -- lvim.use_icons = false
 
 -- keymappings [view all the defaults by pressing <leader>Lk]
 lvim.leader = "space"
 -- add your own keymapping
 lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
--- lvim.keys.normal_mode["<S-l>"] = ":BufferLineCycleNext<CR>"
--- lvim.keys.normal_mode["<S-h>"] = ":BufferLineCyclePrev<CR>"
 -- unmap a default keymapping
 -- vim.keymap.del("n", "<C-Up>")
 -- override a default keymapping
@@ -48,10 +42,6 @@ lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
 --   },
 -- }
 
--- Change theme settings
--- lvim.builtin.theme.options.style = "storm"
--- lvim.builtin.theme.options.dim_inactive = true
-
 -- Use which-key to add extra bindings with the leader-key prefix
 -- lvim.builtin.which_key.mappings["P"] = { "<cmd>Telescope projects<CR>", "Projects" }
 -- lvim.builtin.which_key.mappings["t"] = {
@@ -61,13 +51,14 @@ lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
 --   d = { "<cmd>Trouble document_diagnostics<cr>", "Diagnostics" },
 --   q = { "<cmd>Trouble quickfix<cr>", "QuickFix" },
 --   l = { "<cmd>Trouble loclist<cr>", "LocationList" },
---   w = { "<cmd>Trouble workspace_diagnostics<cr>", "Workspace Diagnostics" },
+--   w = { "<cmd>Trouble workspace_diagnostics<cr>", "Wordspace Diagnostics" },
 -- }
 
 -- TODO: User Config for predefined plugins
 -- After changing plugin config exit and reopen LunarVim, Run :PackerInstall :PackerCompile
 lvim.builtin.alpha.active = true
 lvim.builtin.alpha.mode = "dashboard"
+lvim.builtin.notify.active = true
 lvim.builtin.terminal.active = true
 lvim.builtin.nvimtree.setup.view.side = "left"
 lvim.builtin.nvimtree.setup.renderer.icons.show.git = false
@@ -89,13 +80,13 @@ lvim.builtin.treesitter.ensure_installed = {
 }
 
 lvim.builtin.treesitter.ignore_install = { "haskell" }
-lvim.builtin.treesitter.highlight.enable = true
+lvim.builtin.treesitter.highlight.enabled = true
 
-lvim.transparent_window = true
 -- generic LSP settings
+
 -- -- make sure server will always be installed even if the server is in skipped_servers list
 -- lvim.lsp.installer.setup.ensure_installed = {
---     "sumneko_lua",
+--     "sumeko_lua",
 --     "jsonls",
 -- }
 -- -- change UI setting of `LspInstallInfo`
@@ -108,7 +99,7 @@ lvim.transparent_window = true
 -- }
 
 -- ---@usage disable automatic installation of servers
--- lvim.lsp.installer.setup.automatic_installation = false
+-- lvim.lsp.automatic_servers_installation = false
 
 -- ---configure a server manually. !!Requires `:LvimCacheReset` to take effect!!
 -- ---see the full default list `:lua print(vim.inspect(lvim.lsp.automatic_configuration.skipped_servers))`
@@ -118,7 +109,7 @@ lvim.transparent_window = true
 
 -- ---remove a server from the skipped list, e.g. eslint, or emmet_ls. !!Requires `:LvimCacheReset` to take effect!!
 -- ---`:LvimInfo` lists which server(s) are skipped for the current filetype
--- lvim.lsp.automatic_configuration.skipped_servers = vim.tbl_filter(function(server)
+-- vim.tbl_map(function(server)
 --   return server ~= "emmet_ls"
 -- end, lvim.lsp.automatic_configuration.skipped_servers)
 
@@ -167,9 +158,13 @@ lvim.transparent_window = true
 -- }
 
 -- Additional Plugins
-lvim.plugins = {
-  { "catppuccin/nvim", as = "catppuccin" }
-}
+-- lvim.plugins = {
+--     {"folke/tokyonight.nvim"},
+--     {
+--       "folke/trouble.nvim",
+--       cmd = "TroubleToggle",
+--     },
+-- }
 
 -- Autocommands (https://neovim.io/doc/user/autocmd.html)
 -- vim.api.nvim_create_autocmd("BufEnter", {
