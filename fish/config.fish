@@ -24,7 +24,10 @@ set -U fish_key_bindings fish_vi_key_bindings
 set -Ux EDITOR nvim # 'neovim/neovim' text editor
 set -Ux FZF_DEFAULT_COMMAND "fd -H -E '.git'"
 set -Ux VISUAL nvim
-
+set -Ux FZF_DEFAULT_OPTS "\
+--color=gutter:-1,spinner:#f5e0dc,hl:#f38ba8 \
+--color=fg:#cdd6f4,header:#f38ba8,info:#cba6f7,pointer:#f5e0dc \
+--color=marker:#f5e0dc,fg+:#cdd6f4,prompt:#cba6f7,hl+:#f38ba8"
 # golang - https://golang.google.cn/
 set -Ux GOPATH (go env GOPATH)
 fish_add_path $GOPATH/bin
