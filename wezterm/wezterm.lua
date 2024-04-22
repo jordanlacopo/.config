@@ -34,7 +34,7 @@ local config = {
 	line_height = 1.1,
 	font = wezterm.font_with_fallback({ "Monolisa" }),
 
-	color_scheme = cs.get_color_scheme(),
+	color_scheme = "Catppuccin Mocha",
 
 	window_padding = {
 		left = 30,
