@@ -1,0 +1,37 @@
+
+[default_session]
+
+[[session]]
+name = "Home 🏡"
+path = "~/"
+
+[[session]]
+name = "Code 💻"
+path = "~/Documents/dev/"
+startup_command = "l"
+
+[[session]]
+name = "EMP  💻"
+path = "~/Documents/dev/go/gocb/apps/node/emp/"
+startup_command = "l"
+
+[[session]]
+name = "Tmux ⚙️"
+path = "~/.config/tmux"
+startup_command = "nvim tmux.conf"
+
+[[session]]
+name = "Neovim ⚙️"
+path = "~/.config/nvim"
+startup_command = "nvim"
+
+[[session]]
+name = "second brain 🧠"
+path = "~/c/second-brain"
+startup_command = "nvim +ObsidianToday"
+
+[[session]]
+name = "Dotfiles"
+path = "~/.config"
+
+
