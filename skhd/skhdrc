@@ -23,7 +23,8 @@ shift + alt - x : yabai -m space --mirror x-axis
 # toggle window float
 shift + alt - t : yabai -m window --toggle float --grid 4:4:1:1:2:2
 
-
+#Toggle zen mode with skhd
+ctrl + shift - z : ../tools/center_window.sh 
 
 # -- Modifying Window Size --
 
