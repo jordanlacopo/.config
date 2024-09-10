@@ -40,7 +40,7 @@ require("lazy").setup({
     lazy = true,
     version = false,
   },
-  install = { colorscheme = { "catppuccin" } },
+  install = {},
   ui = { border = "single" },
   checker = { enabled = false },
   performance = {
@@ -48,9 +48,6 @@ require("lazy").setup({
       -- disable some rtp plugins
       disabled_plugins = {
         "gzip",
-        -- "matchit",
-        -- "matchparen",
-        -- "netrwPlugin",
         "tarPlugin",
         "tohtml",
         "tutor",
