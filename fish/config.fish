@@ -12,6 +12,7 @@
 eval (/opt/homebrew/bin/brew shellenv)
 
 
+export PYTHON=$(which python3)
 starship init fish | source # https://starship.rs/
 zoxide init fish | source # 'ajeetdsouza/zoxide'
 
