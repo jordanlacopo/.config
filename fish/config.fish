@@ -37,6 +37,7 @@ fish_add_path $HOME/.config/bin # my custom scripts
 
 set copilot_cli_path (which github-copilot-cli)
 
+alias nv="env NVIM_APPNAME=jvim nvim"
 # # >>> conda initialize >>>
 # # !! Contents within this block are managed by 'conda init' !!
 # if test -f /opt/homebrew/Caskroom/miniconda/base/bin/conda
