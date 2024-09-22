@@ -44,9 +44,6 @@ autocmd("LspAttach", {
         vim.keymap.set("n", "K", function()
             vim.lsp.buf.hover()
         end, opts)
-        vim.keymap.set("n", "<leader>sws", function()
-            vim.lsp.buf.workspace_symbol()
-        end, opts)
         vim.keymap.set("n", "<leader>vd", function()
             vim.diagnostic.open_float()
         end, opts)
@@ -67,6 +64,8 @@ autocmd("LspAttach", {
         end, opts)
     end,
 })
+
+vim.api.nvim_set_hl(0, "TelescopeSelection", { bg = "none" })
 
 vim.g.netrw_browse_split = 0
 vim.g.netrw_banner = 0
